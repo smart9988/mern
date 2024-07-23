@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="number" id="luckyno" value="">
+	<button onclick="luckyfunction()">check my partner</button>
+	<script>
+		function luckyfunction()
+		{
+			var a = Math.floor(Math.random() * (10 - 1)) + 1;
+			var b = document.getElementById('luckyno').value;
+			b=Number(b);
+			if(a==b)
+			{
+				alert('i am lucky'+a);
+			}
+			else
+			{
+				alert('your number not matched');
+			}
+		}
+	</script>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                           
